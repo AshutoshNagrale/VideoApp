@@ -17,8 +17,8 @@ const videoRouter = express.Router();
 
 //create a vide
 videoRouter.post("/add", verifyToken, addVideo);
-videoRouter.put("/:id", verifyToken, updateVideo);
-videoRouter.delete("/:id", verifyToken, deleteVideo);
+videoRouter.put("/update/:id", verifyToken, updateVideo);
+videoRouter.delete("/delete/:id", verifyToken, deleteVideo);
 videoRouter.get("/find/:id", getVideo);
 videoRouter.put("/views/:videoId", addView);
 videoRouter.get("/trend", trendVideo);
