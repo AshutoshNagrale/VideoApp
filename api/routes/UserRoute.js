@@ -4,8 +4,8 @@ import {
   deleteUser,
   getUser,
   likeVideo,
+  dislikeVideo,
   subscribeUser,
-  unlikeVideo,
   unsubscriveUser,
   updateUser,
 } from "../controllers/UserController.js";
@@ -31,6 +31,6 @@ userRouter.put("/unsub/:id", verifyToken, unsubscriveUser);
 userRouter.put("/like/:videoId", verifyToken, likeVideo);
 
 //dislike a video
-userRouter.put("/dislike/:videoId", verifyToken, unlikeVideo);
+userRouter.put("/dislike/:videoId", verifyToken, dislikeVideo);
 
 export default userRouter;
