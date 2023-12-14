@@ -33,9 +33,13 @@ function App() {
             <Wrapper>
               <Routes>
                 <Route path="/">
+<<<<<<< HEAD
                   <Route index element={<Home type="random" />} />
                   <Route path="trends" element={<Home type="trend" />} />
                   <Route path="subscriptions" element={<Home type="sub" />} />
+=======
+                  <Route index element={<Home />} />
+>>>>>>> abe51e642b29e69a92389b123f741fbc3f6049f0
                   <Route path="signin" element={<SignIn />} />
                   <Route path="video">
                     <Route path=":id" element={<Video />} />

@@ -12,12 +12,19 @@
   "dependencies": {
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.15.0",
+<<<<<<< HEAD
     "axios": "^1.6.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.20.1",
     "styled-components": "^6.1.1",
     "timeago.js": "^4.0.2"
+=======
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.20.1",
+    "styled-components": "^6.1.1"
+>>>>>>> abe51e642b29e69a92389b123f741fbc3f6049f0
   },
   "devDependencies": {
     "@types/react": "^18.2.43",
