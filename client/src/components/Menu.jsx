@@ -82,6 +82,8 @@ const Title = styled.h2`
 `;
 
 const Menu = ({ darkMode, setDarkMode }) => {
+  const { currentUser } = useSelector((state) => state.user);
+
   return (
     <Container>
       <Wrapper>
@@ -95,7 +97,6 @@ const Menu = ({ darkMode, setDarkMode }) => {
           <HomeIcon />
           Home
         </Item>
-<<<<<<< HEAD
         <Link to="trends" style={{ textDecoration: "none", color: "inherit" }}>
           <Item>
             <ExploreOutlinedIcon />
@@ -111,16 +112,6 @@ const Menu = ({ darkMode, setDarkMode }) => {
             Subscriptions
           </Item>
         </Link>
-=======
-        <Item>
-          <ExploreOutlinedIcon />
-          Explore
-        </Item>
-        <Item>
-          <SubscriptionsOutlinedIcon />
-          Subscriptions
-        </Item>
->>>>>>> abe51e642b29e69a92389b123f741fbc3f6049f0
         <Hr />
         <Item>
           <VideoLibraryOutlinedIcon />
@@ -133,11 +124,7 @@ const Menu = ({ darkMode, setDarkMode }) => {
         <Hr />
         <Login>
           Sign in to like videos, comment, and subscribe.
-<<<<<<< HEAD
           <Link to="signin" style={{ textDecoration: "none" }}>
-=======
-          <Link to="signin" style={{textDecoration:"none"}}>
->>>>>>> abe51e642b29e69a92389b123f741fbc3f6049f0
             <Button>
               <AccountCircleOutlinedIcon />
               SIGN IN
